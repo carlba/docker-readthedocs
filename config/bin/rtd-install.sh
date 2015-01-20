@@ -12,5 +12,5 @@ $PIP install -U \
 $PYTHON manage.py syncdb --noinput
 $PYTHON manage.py migrate
 $PYTHON manage.py loaddata test_data
-echo "from django.contrib.auth.models import User; User.objects.create_superuser('admin', 'admin@localhost', 'admin')" | $PYTHON manage.py shell
+echo "from django.contrib.auth.models import User; User.objects.create_superuser('admin', 'carl.backstrom@birdstep.com', 'admin')" | $PYTHON manage.py shell
 chown -R py $APPDIR
